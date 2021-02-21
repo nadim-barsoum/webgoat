@@ -88,6 +88,14 @@ jobs:
           password: ${{ secrets.FOD_PAT }}
           release-id: 65593
           output: ./sarif/output.sarif
+          
+      - name: Add Secure Code Warrior contextual training to SARIF
+        uses: SecureCodeWarrior/github-action-add-sarif-contextual-training@v1.0.7
+        with:
+          inputSarifFile: sarif/output.sarif
+          outputSarifFile: sarif/output.processed.sarif
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+
 
       # Import Fortify on Demand results to GitHub Security Code Scanning
       - name: Import Results
