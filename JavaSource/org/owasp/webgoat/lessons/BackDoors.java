@@ -103,14 +103,14 @@ public class BackDoors extends LessonAdapter
 			ResultSet.CONCUR_READ_ONLY);
 		if (arrSQL.length == 2)
 		{
-		    statement.executeUpdate(arrSQL[1]);
+		    //statement.executeUpdate(arrSQL[1]);
 
 		    getLessonTracker(s).setStage(2);
 		    s
 			    .setMessage("You have succeeded in exploiting the vulnerable query and created another SQL statement. Now move to stage 2 to learn how to create a backdoor or a DB worm");
 		}
 
-		ResultSet rs = statement.executeQuery(arrSQL[0]);
+		//ResultSet rs = statement.executeQuery(arrSQL[0]);
 		if (rs.next())
 		{
 		    Table t = new Table(0).setCellSpacing(0).setCellPadding(0)
@@ -232,7 +232,7 @@ public class BackDoors extends LessonAdapter
 
 	String formattedInput = "<span class='myClass'>" + userInput
 		+ "</span>";
-	ec.addElement(new Div(SELECT_ST + formattedInput));
+	//ec.addElement(new Div(SELECT_ST + formattedInput));
 
 	Input b = new Input();
 
