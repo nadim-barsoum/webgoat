@@ -82,7 +82,7 @@ jobs:
       - name: Download Results
         uses: itkaa/gha-fod-generate-sarif@1.1.6
         with:
-          base-url: https://emea.fortify.com
+          base-url: https://api.emea.fortify.com
           tenant: ${{ secrets.FOD_TENANT }}
           user: ${{ secrets.FOD_USER }}
           password: ${{ secrets.FOD_PAT }}
