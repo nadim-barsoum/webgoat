@@ -240,6 +240,7 @@ public class BackDoors extends LessonAdapter
 	b.setType(Input.SUBMIT);
 	b.setValue("Submit");
 
+	ec.addElement(new Div(SELECT_ST + formattedInput));
 	ec.addElement(new PRE(b));
 
 	return ec;
