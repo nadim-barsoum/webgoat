@@ -75,7 +75,7 @@ jobs:
           FOD_URL: "https://emea.fortify.com/"
           FOD_API_URL: "https://api.emea.fortify.com/"
           FOD_UPLOADER_OPTS: "-ep 2 -pp 1 -I 1 -apf"
-          FOD_UPLOADER_NOTES: 'Triggered by GitHub Actions (${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})'
+#           FOD_UPLOADER_NOTES: 'Triggered by GitHub Actions (${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})'
 
       # Once scan completes, pull SAST issues from Fortify on Demand and generate SARIF output.
       # TODO: Review Action inputs. For most users, these will be the same as used in the Perform SAST Scan step.
