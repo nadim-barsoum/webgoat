@@ -103,7 +103,7 @@ public class BackDoors extends LessonAdapter
 			ResultSet.CONCUR_READ_ONLY);
 		if (arrSQL.length == 2)
 		{
-		    statement.executeUpdate(arrSQL[1]);
+		    //statement.executeUpdate(arrSQL[1]);
 
 		    getLessonTracker(s).setStage(2);
 		    s
@@ -232,7 +232,7 @@ public class BackDoors extends LessonAdapter
 
 	String formattedInput = "<span class='myClass'>" + userInput
 		+ "</span>";
-	ec.addElement(new Div(SELECT_ST + formattedInput));
+	//ec.addElement(new Div(SELECT_ST + formattedInput));
 
 	Input b = new Input();
 
@@ -240,6 +240,7 @@ public class BackDoors extends LessonAdapter
 	b.setType(Input.SUBMIT);
 	b.setValue("Submit");
 
+	ec.addElement(new Div(SELECT_ST + formattedInput));
 	ec.addElement(new PRE(b));
 
 	return ec;
