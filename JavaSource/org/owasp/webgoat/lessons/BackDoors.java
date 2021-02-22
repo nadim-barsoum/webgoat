@@ -110,7 +110,7 @@ public class BackDoors extends LessonAdapter
 			    .setMessage("You have succeeded in exploiting the vulnerable query and created another SQL statement. Now move to stage 2 to learn how to create a backdoor or a DB worm");
 		}
 
-		//ResultSet rs = statement.executeQuery(arrSQL[0]);
+		ResultSet rs = statement.executeQuery(arrSQL[0]);
 		if (rs.next())
 		{
 		    Table t = new Table(0).setCellSpacing(0).setCellPadding(0)
