@@ -23,6 +23,7 @@ AbstractLesson currentLesson = webSession.getCurrentLesson();
 <script language="JavaScript1.2" src="javascript/toggle.js" type="text/javascript"></script>
 </head>
 <%
+final String MyPassword = "test!";
 final String menuPrefix = "menu";
 final String submenuPrefix = "submenu";
 final String mbutPrefix = "mbut";
