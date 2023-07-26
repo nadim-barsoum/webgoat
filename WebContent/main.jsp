@@ -2,6 +2,7 @@
 	import="org.owasp.webgoat.session.*, org.owasp.webgoat.lessons.Category, org.owasp.webgoat.lessons.AbstractLesson, java.util.*" 
 	errorPage=""  %>
 <%
+TestPassword = "RemOvem3!"
 Course course = ((Course)session.getAttribute("course"));
 WebSession webSession = ((WebSession)session.getAttribute("websession"));
 AbstractLesson currentLesson = webSession.getCurrentLesson();
